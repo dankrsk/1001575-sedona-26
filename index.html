@@ -35,7 +35,7 @@
 					</strong>
 				</p>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-				<ul>
+				<ol>
 					<li>
 						<div>
 							<h3>Настоящий городок</h3>
@@ -45,35 +45,33 @@
 								там течёт своя жизнь
 							</p>
 						</div>
-						<p>
-							<img src="img/mini-city.jpg" width="800" height="256" alt="Фото городка Седона">
-						</p>
+						<div><!-- Фоновое декоративное изображение --></div>
 						<ul>
 							<li>
+								<div><!-- Иконка дома --></div>
 								<p>
-									<img src="img/icon-1.svg" width="75" height="72" alt="Иконка дома">
+									<b>Жильё</b>
 								</p>
-								<b>Жильё</b>
 								<p>
 									Рекомендуем пожить в настоящем
 									мотеле, всё как в кино!
 								</p>
 							</li>
 							<li>
+								<div><!-- Иконка бургера --></div>
 								<p>
-									<img src="img/icon-2.svg" width="74" height="70" alt="Иконка бургера">
+									<b>Еда</b>
 								</p>
-								<b>Еда</b>
 								<p>
 									Всегда заказывайте фирменный бургер,
 									вы не разочаруетесь!
 								</p>
 							</li>
 							<li>
+								<div><!-- Иконка подарка --></div>
 								<p>
-									<img src="img/icon-3.svg" width="64" height="76" alt="Иконка подарка">
+									<b>Сувениры</b>
 								</p>
-								<b>Сувениры</b>
 								<p>
 									Не только китайского, но и местного
 									производства!
@@ -90,9 +88,7 @@
 								вы осмелитесь
 							</p>
 						</div>
-						<p>
-							<img src="img/bridge.jpg" width="800" height="256" alt="Фото моста дьявола">
-						</p>	
+						<div><!-- Фоновое декоративное изображение --></div>	
 					</li>
 					<li>
 						<h3>Небольшая площадь</h3>
@@ -118,18 +114,41 @@
 							и толпится там
 						</p>
 					</li>
-				</ul>
+				</ol>
 			</section>
 			<section>
 				<h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
 				<p>
-					<em>Заинтереcовались?</em>						
+					<b>Заинтереcовались?</b>
 				</p>
 				<p>
 					Укажите предполагаемые даты поездки,<br>
 					и мы покажем вам лучшие предложения гостиниц в Седоне
 				</p>
 				<a href="">Поиск гостиницы в Седоне</a>
+				<form action="" method="get">
+					<p>
+						<label for="search-arrival-date">Дата заезда:</label>
+						<input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+						<button type="button">Вызов календаря</button>
+					</p>
+					<p>
+						<label for="search-departure-date">Дата выезда:</label>
+						<input id="search-departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+						<button type="button">Вызов календаря</button>
+					</p>
+					<p>
+						<label for="search-number-adults">Взрослые:</label>
+						<button type="button">-</button>
+						<input id="search-number-adults" type="number" name="number-adults" value="" placeholder="2" min="1" max="10" step="1">
+						<button type="button">+</button>
+						<label for="search-number-children">Дети:</label>
+						<button type="button">-</button>
+						<input id="search-number-children" type="number" name="number-children" value="" placeholder="0" min="0" max="10" step="1">
+						<button type="button">+</button>
+					</p>
+					<button type="submit">Найти</button>
+				</form>
 			</section>
 			<section>
 				<h2>Расположение города Седона на карте</h2>
@@ -138,7 +157,8 @@
 		</main>
 		<footer>
 			<p>
-				<b>#VISITSEDONA</b>
+				<!-- <b>#visitsedona</b> - мой вариант -->
+				#visitsedona
 			</p>
 			<ul>
 				<li>
@@ -174,26 +194,5 @@
 				</a>
 			</p>
 		</footer>
-		<!-- ПОПАПЫ -->
-		<section>
-			<h2 class="visually-hidden">Форма поиска гостиницы</h2>
-			<form action="" method="get">
-				<p>
-					<label for="search-arrival-date">Дата заезда:</label>
-					<input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-				</p>
-				<p>
-					<label for="search-departure-date">Дата выезда:</label>
-					<input id="search-departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-				</p>
-				<p>
-					<label for="search-number-adults">Взрослые:</label>
-					<input id="search-number-adults" type="number" name="number-adults" value="" placeholder="2" min="1" max="10" step="1">
-					<label for="search-number-children">Дети:</label>
-					<input id="search-number-children" type="number" name="number-children" value="" placeholder="0" min="0" max="10" step="1">
-				</p>
-				<button type="submit">Найти</button>
-			</form>
-		</section>
   </body>
 </html>
