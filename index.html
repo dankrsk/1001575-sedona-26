@@ -125,27 +125,28 @@
 					Укажите предполагаемые даты поездки,<br>
 					и мы покажем вам лучшие предложения гостиниц в Седоне
 				</p>
-				<a href="">Поиск гостиницы в Седоне</a>
-				<form action="" method="get">
+				<button	type="button">Поиск гостиницы в Седоне</button>
+				<!-- <form action="" method="get"> -->
+				<form action="" method="post">
 					<p>
 						<label for="search-arrival-date">Дата заезда:</label>
 						<input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-						<button type="button">Вызов календаря</button>
+						<span>Вызов календаря</span>
 					</p>
 					<p>
 						<label for="search-departure-date">Дата выезда:</label>
 						<input id="search-departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-						<button type="button">Вызов календаря</button>
+						<span>Вызов календаря</span>
 					</p>
 					<p>
 						<label for="search-number-adults">Взрослые:</label>
-						<button type="button">-</button>
+						<span>Уменьшить количество взрослых</span>
 						<input id="search-number-adults" type="number" name="number-adults" value="" placeholder="2" min="1" max="10" step="1">
-						<button type="button">+</button>
+						<span>Увеличить количество взрослых</span>
 						<label for="search-number-children">Дети:</label>
-						<button type="button">-</button>
+						<span>Уменьшить количество детей</span>
 						<input id="search-number-children" type="number" name="number-children" value="" placeholder="0" min="0" max="10" step="1">
-						<button type="button">+</button>
+						<span>Увеличить количество детей</span>
 					</p>
 					<button type="submit">Найти</button>
 				</form>
