@@ -41,7 +41,7 @@ a {
 }
 
 .dark-button:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
 }
@@ -61,7 +61,7 @@ a {
 }
 
 .light-button:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
 }
@@ -80,7 +80,7 @@ a {
 }
 
 .main-navigation a:active {
-	color: rgba(0, 0, 0, 0.2);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation .current-page {
@@ -100,9 +100,12 @@ a {
 	background-repeat: no-repeat;
 }
 
-.features-intro{
-	font-size: 21px;
+.features-intro {
 	line-height: 26px;
+}
+
+.features-intro strong {
+	font-size: 21px;
 	font-weight: 700;
 	color: #000000;
 }
@@ -142,6 +145,7 @@ a {
 	font-weight: 700;
 	color: #000000;
 	text-align: left;
+	text-transform: uppercase;
 
 	background-color: #f2f2f2;
 	border: none;
@@ -194,20 +198,20 @@ a {
 	list-style: none;
 }
 
-.item-link {
+.item-link h3 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 }
 
-.item-link:hover,
-.item-link:focus {
+.item-link:hover h3,
+.item-link:focus h3 {
 	color: #81b3d2;
 }
 
-.item-link:active {
-	color: rgba(0, 0, 0, 0.2);
+.item-link:active h3 {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .item-rating b{
