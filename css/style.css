@@ -100,6 +100,46 @@ a {
 	background-repeat: no-repeat;
 }
 
+.features-list {
+	list-style: none;
+}
+
+.features-list h3,
+.features-list ul b {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.blue-item h3 {
+	color: #ffffff;
+}
+
+.blue-item {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.features-list li:first-child .img-item {
+	background-color: #81b3d2;
+	background-image: url(../img/mini-city.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.features-list ul {
+	list-style: none;
+}
+
+.features-list li:nth-child(2) .img-item {
+	background-color: #81b3d2;
+	background-image: url(../img/bridge.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 .features-intro {
 	line-height: 26px;
 }
@@ -192,6 +232,91 @@ a {
 
 .inner-page {
 	text-align: left;
+}
+
+.hotel-filter-form {
+	color: #ffffff;
+
+	background-color: #729bc1;
+	background-image: url("../img/filter-background.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.hotel-filter-form legend {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.hotel-filter-form fieldset {
+	border: none;
+}
+
+.hotel-filter-form input[type="text"] {
+	color: #ffffff;
+
+	background-color: transparent;
+	border: none;
+}
+
+.hotel-filter-form button[type="submit"] {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.hotel-filter-form button[type="submit"]:hover,
+.hotel-filter-form button[type="submit"]:focus {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.sort-line b{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.sort-line {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.sort-line ul{
+	list-style: none;
+}
+
+.sort-line a{
+	color: rgba(0, 0, 0, 0.3);
+
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-line a:hover,
+.sort-line a:focus {
+	color: #81b3d2;
+
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-line a:active {
+	color: #000000;
+
+	border-bottom: none;
+}
+
+a.active-sort {
+	color: #81b3d2;
+
+	border-bottom: none;
 }
 
 .catalog-list {
