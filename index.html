@@ -9,12 +9,12 @@
   </head>
   <body>
 		<div class="main-wrapper">
-			<header>
-				<a>
+			<header class="main-header">
+				<a class="main-header-logo">
 					<img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сервиса поиска жилья в Седоне">
 				</a>
-				<nav class="main-navigation">
-					<ul>
+				<nav>
+					<ul class="main-navigation">
 						<li><a href="">Информация</a></li>
 						<li><a href="">Фото и видео</a></li>
 						<li><a href="">Карта штата</a></li>
@@ -124,49 +124,53 @@
 				</section>
 				<section class="hotel-search">
 					<h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-					<p>
-						<b>Заинтереcовались?</b>
-					</p>
-					<p>
-						Укажите предполагаемые даты поездки,<br>
-						и мы покажем вам лучшие предложения гостиниц в Седоне
-					</p>
-					<button class="dark-button"	type="button">Поиск гостиницы в Седоне</button>
-					<form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
+					<div class="hotel-search-intro">
 						<p>
-							<label for="search-arrival-date">Дата заезда:</label>
-							<input id="search-arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
-							<button type="button">
-								<span class="visually-hidden">Вызов календаря</span>
-							</button>
+							<b>Заинтереcовались?</b>
 						</p>
 						<p>
-							<label for="search-departure-date">Дата выезда:</label>
-							<input id="search-departure-date" type="text" name="departure-date" value="4 июля 2017">
-							<button type="button">
-								<span>Вызов календаря</span>
-							</button>
+							Укажите предполагаемые даты поездки,<br>
+							и мы покажем вам лучшие предложения гостиниц в Седоне
 						</p>
-						<p>
-							<label for="search-number-adults">Взрослые:</label>
-							<button type="button">
-								<span class="visually-hidden">Уменьшить количество взрослых</span>
-							</button>
-							<input id="search-number-adults" type="number" name="number-adults" value="2" min="1" max="10" step="1">
-							<button type="button">
-								<span class="visually-hidden">Увеличить количество взрослых</span>
-							</button>
-							<label for="search-number-children">Дети:</label>
-							<button type="button">
-								<span class="visually-hidden">Уменьшить количество детей</span>
-							</button>
-							<input id="search-number-children" type="number" name="number-children" value="0" min="0" max="10" step="1">
-							<button type="button">
-								<span class="visually-hidden">Увеличить количество детей</span>
-							</button>
-						</p>
-						<button class="light-button" type="submit">Найти</button>
-					</form>
+					</div>
+					<div class="hotel-search-wrapper">
+						<button class="dark-button"	type="button">Поиск гостиницы в Седоне</button>
+						<form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
+							<p>
+								<label for="search-arrival-date">Дата заезда:</label>
+								<input id="search-arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
+								<button type="button">
+									<span class="visually-hidden">Вызов календаря</span>
+								</button>
+							</p>
+							<p>
+								<label for="search-departure-date">Дата выезда:</label>
+								<input id="search-departure-date" type="text" name="departure-date" value="4 июля 2017">
+								<button type="button">
+									<span>Вызов календаря</span>
+								</button>
+							</p>
+							<p>
+								<label for="search-number-adults">Взрослые:</label>
+								<button type="button">
+									<span class="visually-hidden">Уменьшить количество взрослых</span>
+								</button>
+								<input id="search-number-adults" type="number" name="number-adults" value="2" min="1" max="10" step="1">
+								<button type="button">
+									<span class="visually-hidden">Увеличить количество взрослых</span>
+								</button>
+								<label for="search-number-children">Дети:</label>
+								<button type="button">
+									<span class="visually-hidden">Уменьшить количество детей</span>
+								</button>
+								<input id="search-number-children" type="number" name="number-children" value="0" min="0" max="10" step="1">
+								<button type="button">
+									<span class="visually-hidden">Увеличить количество детей</span>
+								</button>
+							</p>
+							<button class="light-button" type="submit">Найти</button>
+						</form>
+					</div>
 				</section>
 				<section>
 					<h2 class="visually-hidden">Расположение города Седона на карте</h2>
