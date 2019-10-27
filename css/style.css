@@ -186,7 +186,7 @@ img {
 }
 
 .features-intro {
-	width: 490px;
+	width: 495px;
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 51px;
@@ -363,9 +363,9 @@ img {
 
 .features-list .item-dark {
 	padding-top: 48px;
-	padding-right: 69px;
+	padding-right: 68px;
 	padding-bottom: 59px;
-	padding-left: 69px;
+	padding-left: 68px;
 
 	background-color: #eeeeee;
 }
@@ -386,8 +386,8 @@ img {
 }
 
 .features-list .special-description {
-	padding-right: 1px;
-	padding-left: 1px;
+	padding-right: 2px;
+	padding-left: 2px;
 }
 
 .hotel-search {
@@ -395,7 +395,7 @@ img {
 }
 
 .hotel-search-intro {
-	width: 435px;
+	width: 440px;
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -463,8 +463,8 @@ img {
 }
 
 .hotel-search-form input {
-	box-sizing: border-box;
-	width: 346px;
+	width: 290px;
+	height: 26px; /* Вместо line-height, была проблема в IE11 */
 	margin: 0;
 	padding-top: 6px;
 	padding-right: 43px;
@@ -473,7 +473,6 @@ img {
 
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 26px;
 	text-align: left;
 	text-transform: uppercase;
 	color: #000000;
@@ -531,8 +530,7 @@ img {
 }
 
 .hotel-search-form input[type="number"] {
-	box-sizing: border-box;
-	width: 114px;
+	width: 16px;
 	padding-right: 49px;
 	padding-left: 49px;
 
@@ -839,7 +837,7 @@ input[type="number"]:focus {
 }
 
 .filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-	outline: solid 1px -webkit-focus-ring-color;
+	outline: solid 1px highlight;
 }
 
 .hotel-filter-form .price legend {
@@ -888,20 +886,9 @@ input[type="number"]:focus {
 	height: 2px;
 	margin-top: 20px;
 	margin-bottom: 31px;
-}
 
-
-.range-control .scale::before {
-	content: "";
-	
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: calc(100% - 44px);
-	height: 2px;
-
-	background-color: #ffffff;
+	cursor: pointer;
+	pointer-events: none;
 }
 
 .range-control .scale {
@@ -927,7 +914,7 @@ input[type="number"]:focus {
 	border-radius: 50%;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
-	cursor: pointer;
+	pointer-events: auto;
 }
 
 .range-control::before {
@@ -938,6 +925,19 @@ input[type="number"]:focus {
 .range-control::after {
 	top: -9px;
 	right: 44px;
+}
+
+.range-control .scale::before {
+	content: "";
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: calc(100% - 44px);
+	height: 2px;
+
+	background-color: #ffffff;
 }
 
 .hotel-filter-form button[type="submit"] {
