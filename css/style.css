@@ -545,11 +545,6 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-input[type="number"]:hover,
-input[type="number"]:focus {
-  -moz-appearance: number-input;
-}
-
 .minus,
 .plus {
 	position: absolute;
@@ -1155,3 +1150,44 @@ input[type="number"]:focus {
 
 	background-color: #f2f2f2;
 }
+
+/* for js: hotel-search-form on index */
+
+@keyframes showdown {
+	from {
+		max-height: 0;
+		padding: 0;
+	}
+	to {
+		max-height: 500px;
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+
+.form-hide {
+	display: none;
+	overflow: hidden;
+}
+
+.form-show {
+	display: block;
+
+	animation-name: showdown;
+	animation-duration: 0.6s;
+}
+
+.form-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+} 
