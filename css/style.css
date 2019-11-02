@@ -640,6 +640,10 @@ input[type="number"]::-webkit-inner-spin-button {
 	background-color: #bcd9bc;
 }
 
+.map iframe {
+	border: none;
+}
+
 .map img {
 	width: 1200px;
 	height: 594px;
