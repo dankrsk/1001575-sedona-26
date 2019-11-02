@@ -200,8 +200,8 @@ img {
 }
 
 .features-intro strong {
-	font-size: 21px;
 	font-weight: 700;
+	font-size: 21px;
 	color: #000000;
 }
 
@@ -221,9 +221,9 @@ img {
 
 .features-list h3,
 .features-list ul b {
+	font-weight: 700;
 	font-size: 21px;
 	line-height: 21px;
-	font-weight: 700;
 	color: #000000;
 }
 
@@ -634,6 +634,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 	font-size: 21px;
 	line-height: 26px;
+}
+
+.map {
+	background-color: #bcd9bc;
 }
 
 .map img {
